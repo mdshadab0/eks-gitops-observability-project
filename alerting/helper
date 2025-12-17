@@ -25,7 +25,7 @@ Step - 2 : Update the below two configuration blocks in alertmanager configmap.
             {{ .CommonAnnotations.summary }}
             {{ .CommonAnnotations.description }}
           send_resolved: true
-          api_url: 'REMOVED_SECRET'
+          api_url: 'SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}'
 
   Second Block:
   This block defines in which case where to send notifications. For example for below case if team, severity matches with devops, critical then it will send the notification to slack receiver which we added in above configuration if not to default receiver which is empty.
