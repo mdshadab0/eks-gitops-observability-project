@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  labels:
+    name: datastore-ing
+  namespace: frontend
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: aad67088fe4114b359bcd75ce16a04b0-1673447298.ap-south-1.elb.amazonaws.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: datastore-frontend-svc
+                port:
+                  number: 8081

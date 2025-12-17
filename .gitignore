@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.env
+*.pem
+*.key
+
+# Helm
+charts/
+*.tgz
+
+# Terraform (if added later)
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
