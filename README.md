@@ -1,4 +1,4 @@
-# 🚀 Microservices Deployment on AWS EKS with GitOps & Observability
+#  Containerized Application Deployment using Docker and Kubernetes 
 
 ![AWS](https://img.shields.io/badge/AWS-EKS-orange)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Container%20Orchestration-blue)
